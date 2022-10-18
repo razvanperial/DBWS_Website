@@ -1,0 +1,85 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.navBar {
+    background-color: rgb(173, 219, 242);
+    overflow: hidden;
+    width:100%;
+}
+
+.navBar img {
+    float: left;
+    width: 8vw;
+    margin-left: 2.5vw;
+}
+
+.sideNav {
+    height: 100vh;
+    width: 13%;
+    z-index: 1;
+    background-color: rgb(0, 13, 67);
+    top: 8vw;
+    position: sticky;
+    top:0;
+    float: left;
+}
+
+.sideNav a {
+    padding: 30px 15px 30px 15px;
+    text-decoration: none;
+    font-size: 3vh;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sideNav a:hover {
+    background-color: #818181;
+    color: rgb(0, 13, 67);
+}
+
+.content{
+    margin-left: 13%;
+}
+
+.content div{
+    height: 100vh;
+    text-align: center;
+    font-size: 7vh;
+    font-style: italic;
+    padding-top: 5vh;
+}
+
+#Home{
+    background-color: rgb(110, 200, 245);
+}
+
+#About{
+    background-color: rgb(36, 175, 245);
+}
+
+#Info{
+    background-color: rgb(0, 150, 225);
+}
+
+#Contact{
+    background-color: rgb(0, 137, 206);
+}
+
+#Imprint{
+    background-color: rgb(0, 104, 156);
+}
+
+.imprint-content{
+    padding: 15% 7% 0 20%;
+    font-size: 1.5vw;
+    font-style: italic;
+    margin: 0;
+}
