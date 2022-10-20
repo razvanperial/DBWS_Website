@@ -33,7 +33,7 @@ body {
 .sideNav a {
     padding: 30px 15px 30px 15px;
     text-decoration: none;
-    font-size: 3vh;
+    font-size: 2vw;
     color: #818181;
     display: block;
     transition: 0.3s;
