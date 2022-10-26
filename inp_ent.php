@@ -33,7 +33,7 @@
         <div>
             Input
             <!--form to read name surname birthdate email-->
-            <form action=<?php php> method="post">
+            <form method="post">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="Name"><br>
                 <label for="surname">Surname:</label><br>
@@ -44,23 +44,23 @@
                 <input type="text" id="email" name="email" placeholder="Email"><br><br>
                 <input type="submit" value="Submit">
             </form>
-            <?php //Insert data into database 
+            <!-- <?php //Insert data into database 
                 $name = $_POST['name'];
                 $surname = $_POST['surname'];
                 $birthdate = $_POST['birthdate'];
                 $email = $_POST['email'];
 
-                $servername = "";
-                $username = "root";
-                $password = "";
-                $dbname = "campus";
+                $servername = "localhost";
+                $username = "group12";
+                $password = "bafflepyramid";
+                $dbname = "group12";
                 
                 $conn = mysqli_connect($servername, $username, $password, $dbname);
                 if (!$conn) {
                     die("Connection failed: " . mysqli_connect_error());
                 }
 
-                $sql = "INSERT INTO entity1 (name, surname, birthdate, email)
+                $sql = "INSERT INTO Student (name, surname, birthdate, email)
                 VALUES ('$name', '$surname', '$birthdate', '$email')";
                 if (mysqli_query($conn, $sql)) {
                     echo "New record created successfully";
@@ -68,9 +68,8 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                 }
                 mysqli_close($conn);
-            ?>
+            ?> -->
         </div>
-        <!--table to show the data-->
         <div id="table">
         </div>
     </div>
