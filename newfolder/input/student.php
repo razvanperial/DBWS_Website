@@ -37,7 +37,7 @@
         <div>
             Input
             <!--form to read name surname birthdate email-->
-            <form method="post">
+            <form method="POST" action= "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" placeholder="Name"><br>
                 <label for="surname">Surname:</label><br>
@@ -49,6 +49,10 @@
                 <input type="submit" value="Submit">
             </form>
             <?php //Insert data into database 
+
+                if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+                    exit();
+                }
                 $name = $_POST['name'];
                 $surname = $_POST['surname'];
                 $birthday = $_POST['birthday'];
