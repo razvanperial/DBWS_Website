@@ -13,7 +13,6 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat'
         rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="scripts.js" type="text/javascript"></script>
     <title>Campus Connect</title>
 </head>
 
