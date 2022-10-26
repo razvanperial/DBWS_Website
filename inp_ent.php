@@ -1,7 +1,7 @@
-<!-- <?php
+<?php
 	define('ROOT', '/');
 	ini_set('error_reporting', E_ALL);
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +48,7 @@
                 <input type="text" id="email" name="email" placeholder="Email"><br><br>
                 <input type="submit" value="Submit">
             </form>
-            <!-- <?php //Insert data into database 
+            <?php //Insert data into database 
                 $name = $_POST['name'];
                 $surname = $_POST['surname'];
                 $birthdate = $_POST['birthdate'];
@@ -72,7 +72,7 @@
                     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
                 }
                 mysqli_close($conn);
-            ?> -->
+            ?>
         </div>
         <div id="table">
         </div>
