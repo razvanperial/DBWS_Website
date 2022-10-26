@@ -1,0 +1,148 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.navBar {
+    background-color: #Ababab;
+    overflow: hidden;
+    width:100%;
+}
+
+.navBar img {
+    float: left;
+    width: 8vw;
+    margin-left: 2.5vw;
+}
+
+.sideNav {
+    height: 100vh;
+    width: 15%;
+    z-index: 1;
+    background-color: #464846;
+    top: 8vw;
+    position: sticky;
+    top:0;
+    float: left;
+}
+
+.sideNav a {
+    padding: 30px 15px 30px 15px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #Ababab;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sideNav a:hover {
+    background-color: #Ababab;
+    color: white;
+}
+
+.content{
+    margin-left: 15%;
+}
+
+.content div{
+    height: 100vh;
+    text-align: center;
+    font-size: 7vh;
+    font-style: italic;
+    padding-top: 5vh;
+}
+
+.input{
+    margin-left: 15%;
+    background-color: #0b1741;
+    color: white;
+    padding-top: 5vw;
+    /* height: 130vh; */
+}
+
+.input div{
+    text-align: left ;
+    font-size: 7vh;
+    font-style: italic;
+    margin-left: 2vw;
+}
+
+.input form{
+    margin-left: 2vw;
+    margin-top: 2vh;
+    text-align: left;
+    font-size: 3.5vh;
+}
+
+.input h1 {
+    text-align: center;
+    font-size: 7vh;
+    font-style: italic;
+}
+
+.input table {
+    border-collapse: collapse;
+    align-self: left;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    text-align: left;
+    font-size: 3.5vh;
+}
+
+.input div{
+    text-align: left;
+    font-size: 3vh;
+    font-style: italic;
+}
+
+.input th {
+    border: 1px solid white;
+    padding: 0.25;
+    background-color: #464846;
+    color: white;
+}
+
+.input td {
+    border: 1px solid white;
+    padding: 0.25vw;
+    background-color: #Ababab;
+    color: white;
+}
+
+
+
+#Home{
+    background-color: #242a3d;
+    color: white;
+}
+
+#Info{
+    background-color: #D90000;
+}
+
+#Contact{
+    background-color: #Ffbe00;
+}
+
+#Maintenance{
+    background-color: #0b1741;
+    color: white;
+}
+
+#Input{
+    background-color: #0b1741;
+    color: white;
+}
+
+
+.imprint-content{
+    padding: 15% 7% 0 20%;
+    font-size: 1.5vw;
+    font-style: italic;
+    margin: 0;
+}
