@@ -43,7 +43,7 @@
                 <label for="surname">Surname:</label><br>
                 <input type="text" id="surname" name="surname"placeholder="Surname"><br>
                 <label for="birthdate">Birthdate:</label><br>
-                <input type="text" id="birthdate" name="birthdate" placeholder="YYYY-MM-DD"><br>
+                <input type="text" id="birthday" name="birthday" placeholder="YYYY-MM-DD"><br>
                 <label for="email">Email:</label><br>
                 <input type="text" id="email" name="email" placeholder="Email"><br><br>
                 <input type="submit" value="Submit">
@@ -51,7 +51,7 @@
             <?php //Insert data into database 
                 $name = $_POST['name'];
                 $surname = $_POST['surname'];
-                $birthdate = $_POST['birthdate'];
+                $birthdate = $_POST['birthday'];
                 $email = $_POST['email'];
 
                 $servername = "localhost";
@@ -64,8 +64,8 @@
                     die("Connection failed: " . mysqli_connect_error());
                 }
 
-                $sql = "INSERT INTO Student (name, surname, birthdate, email)
-                VALUES ('$name', '$surname', '$birthdate', '$email')";
+                $sql = "INSERT INTO Student (name, surname, birthday, email)
+                VALUES ('$name', '$surname', '$birthday', '$email')";
                 if (mysqli_query($conn, $sql)) {
                     echo "New record created successfully";
                 } else {
