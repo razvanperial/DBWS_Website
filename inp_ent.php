@@ -1,6 +1,7 @@
 <?php
 	define('ROOT', '/');
 	ini_set('error_reporting', E_ALL);
+    echo("hello")
 ?>
 
 <!DOCTYPE html>
