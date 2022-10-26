@@ -51,7 +51,7 @@
             <?php //Insert data into database 
                 $name = $_POST['name'];
                 $surname = $_POST['surname'];
-                $birthdate = $_POST['birthday'];
+                $birthday = $_POST['birthday'];
                 $email = $_POST['email'];
 
                 $servername = "localhost";
